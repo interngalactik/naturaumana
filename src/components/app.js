@@ -1,11 +1,13 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
-
-import Header from './header';
+import { IntlProvider } from 'preact-i18n';
 
 // Code-splitting is automated for routes
-import Home from '../routes/home';
-import Profile from '../routes/profile';
+import Donate from '../routes/donate';
+
+let locale;
+let language;
+language = navigator.language.split(/[-_]/)[0];
 
 export default class App extends Component {
 	
@@ -15,17 +17,22 @@ export default class App extends Component {
 	 */
 	handleRoute = e => {
 		this.currentUrl = e.url;
-	};
+  };
 
 	render() {
+    language = navigator.language.split(/[-_]/)[0];
+    if (language === 'ro') {
+      locale = require('../i18n/ro.json');
+    } else {
+      locale = require('../i18n/en.json');
+    }
 		return (
 			<div id="app">
-				<Header />
-				<Router onChange={this.handleRoute}>
-					<Home path="/" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
-				</Router>
+        <IntlProvider definition={locale}>
+          <Router onChange={this.handleRoute}>
+            <Donate path="/" />
+          </Router>
+        </IntlProvider>
 			</div>
 		);
 	}

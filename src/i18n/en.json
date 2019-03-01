@@ -1,0 +1,14 @@
+{
+  "donate": {
+    "definition": "An independent Romanian documentary, the first of its kind, which wants to question our traditions and habits regarding the animals in contrast to the morality of the time we live, debunks myths in terms of nutrition, shows the impact we have on the environment and offers solutions.",
+    "question": "Would you like to donate?",
+    "answers": {
+      "yes": "Yes",
+      "no": "No",
+      "oneTime": "One time donation",
+      "monthly": "Monthly",
+      "oneeuro": "1 Euro",
+      "moreeuros": "More than one euro"
+    }
+  }
+}
