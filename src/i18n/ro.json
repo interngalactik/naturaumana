@@ -1,6 +1,7 @@
 {
   "donate": {
-    "definition": "Un documentar românesc independent, primul de acest gen, care pune sub semnul întrebării tradițiile și obiceiurile noastre referitor la animale în contrast cu moralitatea vremurilor în care trăim, demontează mituri în ceea ce privește alimentația, prezintă impactul pe care îl avem asupra mediului și oferă soluții.",
+    "title": "Natura Umană",
+    "header": "Un documentar românesc independent - primul de acest gen, care pune sub semnul întrebării tradițiile și obiceiurile noastre referitor la animale în contrast cu moralitatea vremurilor în care trăim, demontează mituri în ceea ce privește alimentația, prezintă impactul pe care îl avem asupra mediului și oferă soluții.",
     "question": "Vrei să donezi?",
     "answers": {
       "yes": "Da",

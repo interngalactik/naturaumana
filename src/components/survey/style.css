@@ -18,5 +18,38 @@
   height: 100%;
   padding: 40px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container__box h1 {
+  text-align: center;
+  font-family: 'Mayeka Thin';
+  text-transform: uppercase;
+}
+
+.container__box h2 {
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 0.825em;
+}
+
+.container__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container__buttons button {
+  background: #000;
+  border: 2px solid #fff;
+  padding: 10px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container__box button:hover {
+  background: #fff;
+  color: #000;
 }

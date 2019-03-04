@@ -1,6 +1,7 @@
 {
   "donate": {
-    "definition": "An independent Romanian documentary, the first of its kind, which wants to question our traditions and habits regarding the animals in contrast to the morality of the time we live, debunks myths in terms of nutrition, shows the impact we have on the environment and offers solutions.",
+    "title": "Human Nature",
+    "header": "An independent Romanian documentary - the first of its kind, which wants to question our traditions and habits regarding the animals in contrast to the morality of the time we live, debunks myths in terms of nutrition, shows the impact we have on the environment and offers solutions.",
     "question": "Would you like to donate?",
     "answers": {
       "yes": "Yes",
