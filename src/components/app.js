@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 import { IntlProvider } from 'preact-i18n';
+import Redirect from '../utils/Redirect';
 
 // Code-splitting is automated for routes
 import Donate from '../routes/donate';
@@ -30,7 +31,8 @@ export default class App extends Component {
 			<div id="app">
         <IntlProvider definition={locale}>
           <Router onChange={this.handleRoute}>
-            <Donate path="/" />
+            <Donate path="/donate" />
+            <Redirect path="/" to="/donate" />
           </Router>
         </IntlProvider>
 			</div>
