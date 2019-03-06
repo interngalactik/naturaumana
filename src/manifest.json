@@ -1,19 +1,19 @@
 {
   "name": "Natura Umană",
   "short_name": "naturaumana",
-  "start_url": "/",
+  "start_url": "/donate",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#c85418",
   "icons": [
     {
-      "src": "/assets/icons/android-chrome-192x192.png",
+      "src": "/assets/icons/naturaumana_icon_192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/icons/android-chrome-512x512.png",
+      "src": "/assets/icons/naturaumana_icon_512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
