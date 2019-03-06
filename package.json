@@ -34,6 +34,7 @@
     "preact-compat": "^3.17.0",
     "preact-i18n": "^1.2.2",
     "preact-router": "^2.5.7",
+    "react-device-detect": "^1.6.2",
     "react-youtube": "^7.9.0"
   },
   "jest": {
