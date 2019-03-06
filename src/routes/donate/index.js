@@ -6,10 +6,6 @@ import style from './style';
 import { BrowserView, MobileView } from 'react-device-detect';
 
 const videoId = 'EoG4Jw5Vs0U';
-window.YTConfig = {
-  host: 'https://www.youtube.com'
-}
-
 const steps = {
   1: {
     buttons: [
