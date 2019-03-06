@@ -47,7 +47,7 @@
       "/node_modules/",
       "<rootDir>/tests/__mocks__/*"
     ],
-    "testURL": "https://34.76.201.40:8080",
+    "testURL": "http://localhost:8080",
     "moduleFileExtensions": [
       "js",
       "jsx"
