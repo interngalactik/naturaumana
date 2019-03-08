@@ -10,15 +10,6 @@ const steps = {
   1: {
     buttons: [
       { 
-        title: <Text id="donate.buttons.donate" />,
-        link: '',
-        increment: 1 
-      }
-    ]
-  },
-  2: {
-    buttons: [
-      { 
         title: <Text id="donate.buttons.monthlyDonation" />,
         link: '',
         increment: 2 
@@ -30,7 +21,7 @@ const steps = {
       }
     ]
   },
-  3: {
+  2: {
     buttons: [
       { 
         title: 'Go Fund Me',
@@ -45,35 +36,17 @@ const steps = {
       // { title: 'Revolut', increment: 0 }
     ]
   },
-  4: {
+  3: {
     buttons: [
       { 
         title: <Text id="donate.buttons.oneEuro" />,
-        link: '',
-        increment: 1
+        link: 'https://www.teaming.net/naturaumanafilm',
+        increment: 0
       },
       { 
         title: <Text id="donate.buttons.moreEuros" />,
-        link: '',
-        increment: 2
-      }
-    ]
-  },
-  5: {
-    buttons: [
-      { 
-        title: 'teaming',
-        link: 'https://www.teaming.net/naturaumanafilm',
-        increment: 0
-      }
-    ]
-  },
-  6: {
-    buttons: [
-      { 
-        title: 'patreon',
         link: 'https://www.patreon.com/naturaumanafilm',
-        increment: 0 
+        increment: 0
       }
     ]
   }
