@@ -8,6 +8,7 @@
       "monthlyDonation": "Monthly donation",
       "oneEuro": "one euro",
       "moreEuros": "More"
-    }
+    },
+    "warning": "NOTICE: You will be redirected to a third-party website in order to make the donation."
   }
 }
