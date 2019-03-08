@@ -25,6 +25,12 @@ export default class Survey extends Component {
     }
   }
 
+  handleBackButton() {
+    this.setState({
+      step: 1
+    })
+  }
+
   componentDidMount() {
     let delay = 0;
 
@@ -61,6 +67,19 @@ export default class Survey extends Component {
           }
           </div>
         </div>
+        <footer>
+          <div className={style.button__back}>
+            {
+              this.state.step > 1 ?
+              <img src="/assets/icons/keyboard_back.png" onClick={() => this.handleBackButton()} />
+              :
+              ''
+            }
+          </div>
+            <p>
+              <Text id="donate.warning" />  
+            </p>
+          </footer>
       </div>
     )
   }
