@@ -103,7 +103,7 @@ export default class Donate extends Component {
         </BrowserView>
         <MobileView>
           <div className={style.image__foreground}>
-            <img src="/assets/images/cover.jpg" alt="human nature" />
+            <img src="/assets/images/cover.jpg" alt="natura umana" />
           </div>
         </MobileView>
         <div className={style.video__volume} onClick={() => this.handleVolume()}>
