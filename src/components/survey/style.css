@@ -52,6 +52,12 @@
   min-width: 45%;
 }
 
+@media(max-width: 360px) {
+  .container__buttons button {
+    max-width: 135px;
+  }
+}
+
 .container__box button:hover {
   background: rgba(255,255,255,0.9);
   color: #000;
