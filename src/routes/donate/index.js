@@ -84,8 +84,9 @@ export default class Donate extends Component {
         controls: false,
         rel: false,
         showinfo: false,
-        volume: true
-      }
+        volume: true,
+        start: 15
+      },
     };
 
     return(
