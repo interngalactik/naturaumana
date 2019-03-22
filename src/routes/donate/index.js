@@ -85,7 +85,9 @@ export default class Donate extends Component {
         rel: false,
         showinfo: false,
         volume: true,
-        start: 15
+        start: 15,
+        end: 116,
+        loop: 1
       },
     };
 
