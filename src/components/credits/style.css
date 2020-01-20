@@ -1,0 +1,46 @@
+.interviews__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 56px 0px;
+    position: relative;
+}
+
+.interviewee {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 6vw;
+}
+
+.interviewee a {
+    text-decoration: none;
+}
+
+.interviewee__name, .interviewee__word {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    font-family: SF Movie Poster;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 2vw;
+    cursor: pointer;
+}
+
+.interviewee__word {
+    cursor: auto;
+    padding-bottom: 0.5vw;
+}
+
+.interviewee__name:hover {
+    color: gray;
+}
+
+.interviewee__video {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,5 +1,13 @@
 .home {
-	padding: 56px 20px;
+	padding: 56px 0;
 	min-height: 100%;
 	width: 100%;
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }

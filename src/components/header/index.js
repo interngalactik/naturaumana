@@ -3,7 +3,10 @@ import style from './style';
 
 const Header = () => (
 	<header class={style.header}>
-		<h1>Preact App</h1>
+		<h1>Natura Umană</h1>
+		<nav>
+			<a href="#">Interviuri</a>
+		</nav>
 	</header>
 );
 

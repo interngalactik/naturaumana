@@ -1,0 +1,27 @@
+.container__button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: 56px;
+    top: 0;
+}
+
+.button {
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 900;
+    min-width: 15%;
+  }
+
+  .button:hover {
+    background: rgba(255,255,255,0.9);
+    color: #000;
+  }

@@ -2,6 +2,11 @@
 	font-family: Mayeka Thin;
 	src: url(../assets/fonts/mayeka-thin-demo.woff);
 }
+
+@font-face {
+	font-family: SF Movie Poster;
+	src: url(../assets/fonts/SF-Movie-Poster.ttf);
+}
 html, body {
 	height: 100%;
 	width: 100%;
@@ -21,4 +26,13 @@ html, body {
 
 #app {
 	height: 100%;
+}
+
+ul, p {
+	margin: 0;
+	padding: 0;
+}
+
+li { 
+	list-style: none;
 }
