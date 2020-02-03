@@ -30,10 +30,10 @@
   }
   
   @media (min-aspect-ratio: 16/9) {
-	/* .video__foreground { 
+	.video__foreground { 
 		height: 300%; 
 		top: -100%; 
-	} */
+	}
   }
   @media (max-aspect-ratio: 16/9) {
 	.video__foreground { 
