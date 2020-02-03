@@ -49,3 +49,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media(max-width: 1024px) {
+    .interviewee {
+        padding: 4vw 0;
+    }
+}
