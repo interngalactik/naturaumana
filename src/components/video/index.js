@@ -53,7 +53,7 @@ export default class Video extends Component {
 		const videoOptions = {
 			playerVars: {
 			  autoplay: true,
-			  controls: 0,
+			  controls: false,
 			  rel: false,
 			  showinfo: false,
 			  start: 15,
@@ -74,20 +74,20 @@ export default class Video extends Component {
 							onEnd={this._onEnd}
 						/>
 					</div>
+					<div className={style.video__volume} onClick={() => this.handleVolume()}>
+					{
+						volume === 0 ? 
+							<img src="../../assets/icons/volume_off.png" />
+						: 
+							<img src="../../assets/icons/volume_up.png" />
+						}
+					</div>
 				</BrowserView>
 				<MobileView>
 					<div className={style.image__foreground}>
 						<img src="/assets/images/cover.jpg" alt="natura umana" />
 					</div>
 				</MobileView>
-				<div className={style.video__volume} onClick={() => this.handleVolume()}>
-				{
-					volume === 0 ? 
-						<img src="../../assets/icons/volume_off.png" />
-					: 
-						<img src="../../assets/icons/volume_up.png" />
-					}
-				</div>
 				<DonateButton />
 			</div>
 		)
