@@ -127,7 +127,7 @@ export default class Teams extends Component {
     render() {
         return(
 
-            <ul class={style.interviews__container}>
+            <ul class={style.interviews__container, style.interviews__container__team}>
                 {
                     teams.map(team => {
                         return (

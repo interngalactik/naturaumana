@@ -2,9 +2,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 56px 0;
+    padding: 112px 0 56px;
     background-color: #000;
     position: relative;
+}
+
+.interviews__container__team {
+    padding-top: 0;
 }
 
 .interviewee {
