@@ -33,7 +33,7 @@ const teams = [
                 text: '',
                 videoId: '',
                 fontSize: '4.5vw',
-                link: 'https://www.facebook.com/interngalactik',
+                link: 'https://www.nistru.ro',
                 word: false
             }
         ]
@@ -61,7 +61,7 @@ const teams = [
                 text: '',
                 videoId: '',
                 fontSize: '4.5vw',
-                link: 'https://www.facebook.com/interngalactik',
+                link: 'https://www.nistru.ro',
                 word: false
             },
             {
