@@ -49,6 +49,13 @@
 	right: 5vw;
 	cursor: pointer;
   }
+
+  .video__play {
+	position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    left: 5vw;
+  }
   
   .image__foreground {
 	position: absolute;

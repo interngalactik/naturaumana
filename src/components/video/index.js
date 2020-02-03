@@ -16,11 +16,13 @@ export default class Video extends Component {
 
         this.state = {
 			player: null,
-			volume: 0
+			volume: 0,
+			play: false
 		};
 
 		this._onReady = this._onReady.bind(this);
 		this.handleVolume = this.handleVolume.bind(this);
+		this.handlePlay = this.handlePlay.bind(this);
     }
 
     _onReady(event) {
@@ -44,6 +46,18 @@ export default class Video extends Component {
 		player.setVolume(volume === 0 ? 100 : 0);
 	}
 
+	handlePlay() {
+		const { play, player } = this.state;
+		this.setState({
+			play: !play
+		})
+		if (!play) {
+			player.playVideo();
+		} else {
+			player.pauseVideo();
+		}
+	}
+
 	componentDidMount() {
 		this.setState({
 			volume: 0
@@ -51,7 +65,7 @@ export default class Video extends Component {
 	}
 
 	render() {
-		const { volume } = this.state;
+		const { volume, play } = this.state;
 		const videoOptions = {
 			playerVars: {
 			  autoplay: true,
@@ -66,7 +80,7 @@ export default class Video extends Component {
 
 		return(
 			<div class={style.video__background}>
-				<BrowserView>
+				<div>
 					<div class={style.video__foreground}>
 						<YouTube
 							videoId={videoId}
@@ -82,14 +96,27 @@ export default class Video extends Component {
 							<img src="../../assets/icons/volume_off.png" />
 						: 
 							<img src="../../assets/icons/volume_up.png" />
-						}
+					}
 					</div>
-				</BrowserView>
-				<MobileView>
+					{
+						isMobile ?
+						<div className={style.video__play} onClick={() => this.handlePlay()}>
+							{
+								play ? 
+								<img src="../../assets/icons/pause.png" />
+								:
+								<img src="../../assets/icons/play.png" />
+							}
+						</div>
+						:
+						''
+					}
+				</div>
+				{/* <MobileView>
 					<div className={style.image__foreground}>
 						<img src="/assets/images/cover.jpg" alt="natura umana" />
 					</div>
-				</MobileView>
+				</MobileView> */}
 				<DonateButton btnContainerStyle={style.container__button} btnStyle={ isMobile ? style.button__mobile : style.button} />
 			</div>
 		)
