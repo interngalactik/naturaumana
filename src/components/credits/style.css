@@ -51,6 +51,14 @@
 }
 
 @media(max-width: 1024px) {
+    .interviews__container {
+        padding-bottom: 0;
+    }
+
+    .interviews__container__team {
+        padding-top: 5vh;
+    }
+    
     .interviewee {
         padding: 4vw 0;
     }

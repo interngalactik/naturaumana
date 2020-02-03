@@ -1,5 +1,7 @@
-import { h, Component } from 'preact';
+import { Component } from 'preact';
 import style from './style';
+
+import { isMobile } from 'react-device-detect';
 
 const teams = [
     {
@@ -8,7 +10,10 @@ const teams = [
                 name: 'directed by',
                 text: '',
                 videoId: '',
-                fontSize: '3vw',
+                fontSize: {
+                    browser: '3vw',
+                    mobile: '5vw'
+                },
                 link: '',
                 word: true
             },
@@ -16,7 +21,10 @@ const teams = [
                 name: 'Diana Musca',
                 text: '',
                 videoId: '',
-                fontSize: '4.5vw',
+                fontSize: {
+                    browser: '4.5vw',
+                    mobile: '6.5vw'
+                },
                 link: 'https://www.facebook.com/dianamusca07',
                 word: false
             },
@@ -24,7 +32,10 @@ const teams = [
                 name: 'and',
                 text: '',
                 videoId: '',
-                fontSize: '3vw',
+                fontSize: {
+                    browser: '3vw',
+                    mobile: '5vw'
+                },
                 link: '',
                 word: true
             },
@@ -32,7 +43,10 @@ const teams = [
                 name: 'Eduard Nistru',
                 text: '',
                 videoId: '',
-                fontSize: '4.5vw',
+                fontSize: {
+                    browser: '4.5vw',
+                    mobile: '6.5vw'
+                },
                 link: 'https://www.nistru.ro',
                 word: false
             }
@@ -44,7 +58,10 @@ const teams = [
                 name: 'cameras',
                 text: '',
                 videoId: '',
-                fontSize: '3vw',
+                fontSize: {
+                    browser: '3vw',
+                    mobile: '5vw'
+                },
                 link: '',
                 word: true
             },
@@ -52,7 +69,10 @@ const teams = [
                 name: 'Diana Musca',
                 text: '',
                 videoId: '',
-                fontSize: '4.5vw',
+                fontSize: {
+                    browser: '4.5vw',
+                    mobile: '6.5vw'
+                },
                 link: 'https://www.facebook.com/dianamusca07',
                 word: false
             },
@@ -60,7 +80,10 @@ const teams = [
                 name: 'Eduard Nistru',
                 text: '',
                 videoId: '',
-                fontSize: '4.5vw',
+                fontSize: {
+                    browser: '4.5vw',
+                    mobile: '6.5vw'
+                },
                 link: 'https://www.nistru.ro',
                 word: false
             },
@@ -68,7 +91,10 @@ const teams = [
                 name: 'Francois Carreau',
                 text: '',
                 videoId: '',
-                fontSize: '4.5vw',
+                fontSize: {
+                    browser: '4.5vw',
+                    mobile: '6.5vw'
+                },
                 link: 'https://www.facebook.com/frcarreau/',
                 word: false
             }
@@ -80,7 +106,10 @@ const teams = [
                 name: 'music',
                 text: '',
                 videoId: '',
-                fontSize: '3vw',
+                fontSize: {
+                    browser: '3vw',
+                    mobile: '5vw'
+                },
                 link: '',
                 word: true
             },
@@ -88,7 +117,10 @@ const teams = [
                 name: 'Daria Somesan (Cozy Lua)',
                 text: '',
                 videoId: '',
-                fontSize: '4.5vw',
+                fontSize: {
+                    browser: '4.5vw',
+                    mobile: '6.5vw'
+                },
                 link: 'https://www.youtube.com/user/DariaSplace',
                 word: false
             }
@@ -101,7 +133,10 @@ const teams = [
                 name: 'color grading',
                 text: '',
                 videoId: '',
-                fontSize: '3vw',
+                fontSize: {
+                    browser: '3vw',
+                    mobile: '5vw'
+                },
                 link: '',
                 word: true
             },
@@ -109,7 +144,10 @@ const teams = [
                 name: 'Tobi Heil',
                 text: '',
                 videoId: '',
-                fontSize: '4.5vw',
+                fontSize: {
+                    browser: '4.5vw',
+                    mobile: '6.5vw'
+                },
                 link: 'https://tobiasheil.de/',
                 word: false
             }
@@ -137,9 +175,9 @@ export default class Teams extends Component {
                                         return (
                                             
                                             member.link ?
-                                            <a href={member.link} target="_blank" class={style.interviewee__name} style={{fontSize: member.fontSize}}>{member.name}</a>
+                                            <a href={member.link} target="_blank" class={style.interviewee__name} style={{ fontSize: isMobile ? member.fontSize.mobile : member.fontSize.browser }}>{member.name}</a>
                                             :
-                                            <p class={style.interviewee__word} style={{fontSize: member.fontSize}}>{member.name}</p>
+                                            <p class={style.interviewee__word} style={{ fontSize: isMobile ? member.fontSize.mobile : member.fontSize.browser }}>{member.name}</p>
                                         )
                                     })
                                 }

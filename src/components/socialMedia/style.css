@@ -23,3 +23,9 @@
 .socialMedia__icon img {
     width: 32px;
 }
+
+@media(max-width: 1024px) {
+    .socialMedia__container {
+        padding-top: 2vh;
+    }
+}
