@@ -6,6 +6,8 @@ import YouTube from 'react-youtube';
 
 import DonateButton from '../../components/donateButton';
 
+import { isMobile } from 'react-device-detect';
+
 const videoId = 'EoG4Jw5Vs0U';
 
 export default class Video extends Component {
@@ -88,7 +90,7 @@ export default class Video extends Component {
 						<img src="/assets/images/cover.jpg" alt="natura umana" />
 					</div>
 				</MobileView>
-				<DonateButton />
+				<DonateButton btnContainerStyle={style.container__button} btnStyle={ isMobile ? style.button__mobile : style.button} />
 			</div>
 		)
 	}

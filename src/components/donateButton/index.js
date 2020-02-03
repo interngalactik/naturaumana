@@ -10,10 +10,10 @@ export default class DonateButton extends Component {
         console.log('Donate');
     }
 
-    render() {
+    render({ btnContainerStyle, btnStyle}) {
         return(
-            <div className={style.container__button}>
-                <button className={style.button} onClick={this.handleDonate}>Donate</button>
+            <div className={btnContainerStyle}>
+                <button className={btnStyle} onClick={this.handleDonate}>Donate</button>
             </div>
         )
     }
