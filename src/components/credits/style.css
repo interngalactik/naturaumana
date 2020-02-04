@@ -9,6 +9,11 @@
 
 .interviews__container__team {
     padding-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    position: relative;
 }
 
 .interviewee {
@@ -58,8 +63,26 @@
     .interviews__container__team {
         padding-top: 5vh;
     }
-    
+
     .interviewee {
         padding: 4vw 0;
+    }
+}
+
+@media(min-width: 1400px) {
+    .interviewee {
+        height: 84px;
+    }
+
+    .interviewee:nth-child(1) .interviewee__name {
+        font-size: 84px!important;
+    }
+
+    .interviewee .interviewee__name {
+        font-size: 70px!important;
+    }
+
+    .interviewee__word {
+        font-size: 42px!important;
     }
 }

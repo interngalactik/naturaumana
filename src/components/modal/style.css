@@ -19,6 +19,7 @@
 
 .player__container {
     width: 640px;
+    height: 360px;
 }
 
 .player__container iframe {
@@ -34,8 +35,8 @@
 
 .modal__box__close__btn {
     position: absolute;
-    top: 0;
-    right: 32px;
+    top: 5vh;
+    right: 5vw;
     width: 32px;
     height: 32px;
     opacity: 0.7;
@@ -76,6 +77,8 @@
 
     .modal__box__close__btn {
         margin-top: 5vh;
+        top: 0;
+        right: 0;
         width: 22px;
         height: 22px;
     }
