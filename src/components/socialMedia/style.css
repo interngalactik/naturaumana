@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: column;
     padding-top: 56px;
+    position: relative;
 }
 
 .socialMedia__text {
