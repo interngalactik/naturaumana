@@ -68,10 +68,10 @@ export default class Video extends Component {
 		const { volume, play } = this.state;
 		const videoOptions = {
 			playerVars: {
-			  autoplay: true,
-			  controls: false,
-			  rel: false,
-			  showinfo: false,
+			  autoplay: 1,
+			  controls: 0,
+			  rel: 0,
+			  showinfo: 0,
 			  start: 15,
 			  end: 116,
 			  loop: 1
