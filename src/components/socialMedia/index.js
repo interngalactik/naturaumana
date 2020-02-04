@@ -29,9 +29,9 @@ export default class SocialMedia extends Component {
     render() {
         return(
             <ul class={style.socialMedia__container}>
-                <li class={style.socialMedia__text}>
+                {/* <li class={style.socialMedia__text}>
                     Follow us on:
-                </li>
+                </li> */}
                 <li>
                     <ul class={style.socialMedia__icons__container}>
                         {

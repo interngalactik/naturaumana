@@ -6,6 +6,7 @@ import Video from '../../components/video';
 import Interviews from '../../components/credits/interviews';
 import Teams from '../../components/credits/teams';
 import SocialMedia from '../../components/socialMedia';
+import Footer from '../../components/footer';
 
 export default class Home extends Component {
 	constructor() {
@@ -22,6 +23,7 @@ export default class Home extends Component {
 				<Interviews />
 				<Teams />
 				<SocialMedia />
+				<Footer />
 			</div>
 		)
 	}
