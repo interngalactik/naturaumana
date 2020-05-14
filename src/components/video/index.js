@@ -8,7 +8,7 @@ import DonateButton from '../../components/donateButton';
 
 import { isMobile } from 'react-device-detect';
 
-const videoId = 'EoG4Jw5Vs0U';
+const videoId = '4JcbNyqHPR0';
 
 export default class Video extends Component {
     constructor() {
@@ -72,8 +72,6 @@ export default class Video extends Component {
 			  controls: 0,
 			  rel: 0,
 			  showinfo: 0,
-			  start: 15,
-			  end: 116,
 			  loop: 1
 			},
 		  };
