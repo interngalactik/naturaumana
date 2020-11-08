@@ -72,6 +72,7 @@ footer .button__back {
   height: 36px;
   width: 100%;
   text-align: center;
+  cursor: pointer;
 }
 
 

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 56px;
+    /* padding-top: 56px; */
     position: relative;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .socialMedia__icon {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .socialMedia__icon img {
@@ -27,6 +27,6 @@
 
 @media(max-width: 1024px) {
     .socialMedia__container {
-        padding-top: 2vh;
+        /* padding-top: 2vh; */
     }
 }
