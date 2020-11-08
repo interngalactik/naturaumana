@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 import style from './style';
 import { Text, withText } from 'preact-i18n';
+import Footer from '../footer';
 
 @withText({
   text: <Text id="donate.subtitle" />
@@ -76,9 +77,9 @@ export default class Survey extends Component {
               ''
             }
           </div>
-            <p>
+            {/* <p>
               <Text id="donate.warning" />  
-            </p>
+            </p> */}
           </footer>
       </div>
     )
