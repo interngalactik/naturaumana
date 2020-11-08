@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#c85418",
+  "theme_color": "#ffcf3d",
   "icons": [
     {
       "src": "/assets/icons/naturaumana_icon_192x192.png",
