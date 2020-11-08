@@ -25,7 +25,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.5.4",
     "per-env": "^1.0.2",
-    "preact-cli": "^2.1.0",
+    "preact-cli": "^3.0.3",
     "preact-render-spy": "^1.2.1"
   },
   "dependencies": {

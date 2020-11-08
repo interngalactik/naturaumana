@@ -18,14 +18,14 @@ const teams = [
                 word: true
             },
             {
-                name: 'Diana Musca',
+                name: 'Eduard Nistru',
                 text: '',
                 videoId: '',
                 fontSize: {
                     browser: '4.5vw',
                     mobile: '6.5vw'
                 },
-                link: 'https://www.facebook.com/dianamusca07',
+                link: 'https://www.nistru.ro',
                 word: false
             },
             {
@@ -40,14 +40,14 @@ const teams = [
                 word: true
             },
             {
-                name: 'Eduard Nistru',
+                name: 'Diana Musca',
                 text: '',
                 videoId: '',
                 fontSize: {
                     browser: '4.5vw',
                     mobile: '6.5vw'
                 },
-                link: 'https://www.nistru.ro',
+                link: 'https://www.facebook.com/dianamusca07',
                 word: false
             }
         ]
@@ -103,7 +103,7 @@ const teams = [
     {
         members: [
             {
-                name: 'music',
+                name: 'sound design & music',
                 text: '',
                 videoId: '',
                 fontSize: {
@@ -114,7 +114,7 @@ const teams = [
                 word: true
             },
             {
-                name: 'Daria Somesan (Cozy Lua)',
+                name: 'Daria Somesan',
                 text: '',
                 videoId: '',
                 fontSize: {

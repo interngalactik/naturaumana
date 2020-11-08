@@ -29,9 +29,9 @@ const interviews = [
                 word: false
             },
             {
-                name: 'Razvan Eremia (Deliric)',
-                text: '',
-                videoId: '',
+                name: 'Deliric',
+                text: '"Mi-ar plăcea să devină din ce în ce mai mulți oameni vegani, dar nu cred că poți să o impui... e o schimbare în mentalitate și o să vină la fiecare." - Deliric, artist Hip-Hop',
+                videoId: 'gWWvIdyqLtc',
                 fontSize: {
                     browser: '6vw',
                     mobile: '10vw'
@@ -44,7 +44,7 @@ const interviews = [
         interviewees: [
             {
                 name: 'Remus Cernea',
-                text: ' Remus Cernea ne vorbeşte despre schimbare şi despre empatia faţă de cei care au alte opinii.',
+                text: 'Remus Cernea ne vorbeşte despre schimbare şi despre empatia faţă de cei care au alte opinii.',
                 videoId: 'CfVidVPVSmE',
                 fontSize: {
                     browser: '5vw',
@@ -87,16 +87,6 @@ const interviews = [
     {
         interviewees: [
             {
-                name: 'Corina Zugravu',
-                text: 'Corina Zugravu, associate professor for food safety and nutrition, shares with us the number one benefit on a plant based diet. ',
-                videoId: 'Qzmf6FNFRpg',
-                fontSize: {
-                    browser: '5vw',
-                    mobile: '7.5vw'
-                },
-                word: false
-            },
-            {
                 name: 'Gigi Ghinea',
                 text: 'Gigi Ghinea, psychologist and author, shares her opinion on the link between a post-communism country and eating habits.',
                 videoId: 'EyWZvwAA95w',
@@ -118,36 +108,11 @@ const interviews = [
             },
             {
                 name: 'Paul Sandu',
-                text: '',
-                videoId: '',
+                text: 'Paul Gabriel Sandu, filosof și om politic, ne vorbește despre cultura occidentală și imperativul suferinței de a fi oprită.',
+                videoId: 'dsdPZINYwbU',
                 fontSize: {
                     browser: '5vw',
                     mobile: '7.5vw'
-                },
-                word: false
-            }
-        ]
-    },
-    
-    {
-        interviewees: [
-            {
-                name: 'Bogdan Gioara',
-                text: '',
-                videoId: '',
-                fontSize: {
-                    browser: '4.5vw',
-                    mobile: '6.5vw'
-                },
-                word: false
-            },
-            {
-                name: 'Sorin Dumitru',
-                text: 'Sorin Dumitru, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-                videoId: 'ZtCgWHUxLSA',
-                fontSize: {
-                    browser: '4.5vw',
-                    mobile: '6.5vw'
                 },
                 word: false
             },
@@ -162,6 +127,41 @@ const interviews = [
                 word: false
             },
             {
+                name: 'Bogdan Gioara',
+                text: 'Bogdan Gioară vorbește despre impactul agriculturii zootehnice asupra schimbărilor climatice și incompatibilitatea ei cu vremurile pe care le trăim.',
+                videoId: 'huJpw0JHRA8',
+                fontSize: {
+                    browser: '4.5vw',
+                    mobile: '6.5vw'
+                },
+                word: false
+            }
+        ]
+    },
+    
+    {
+        interviewees: [
+            {
+                name: 'Sorin Dumitru',
+                text: 'Sorin Dumitru, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                videoId: 'ZtCgWHUxLSA',
+                fontSize: {
+                    browser: '4.5vw',
+                    mobile: '6.5vw'
+                },
+                word: false
+            },
+            {
+                name: 'Corina Zugravu',
+                text: 'Corina Zugravu, associate professor for food safety and nutrition, shares with us the number one benefit on a plant based diet. ',
+                videoId: 'Qzmf6FNFRpg',
+                fontSize: {
+                    browser: '5vw',
+                    mobile: '7.5vw'
+                },
+                word: false
+            },
+            {
                 name: 'Katharina Hani',
                 text: 'Katharina Hani, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
                 videoId: 'NiA87gSUX_w', 
@@ -171,21 +171,6 @@ const interviews = [
                 },
                 word: false
             },
-            {
-                name: 'Ionut Catalin',
-                text: '',
-                videoId: '',
-                fontSize: {
-                    browser: '4.5vw',
-                    mobile: '6.5vw'
-                },
-                word: false
-            }
-        ]
-    },
-
-    {
-        interviewees: [
             {
                 name: 'Nicusor Popa',
                 text: 'Nicusor Popa, founder at Spirit Animals Sanctuary, talks about the true nature of horses.',
@@ -207,17 +192,7 @@ const interviews = [
                 word: false
             },
             {
-                name: 'Marisha Zaporojan',
-                text: '',
-                videoId: '',
-                fontSize: {
-                    browser: '4.5vw',
-                    mobile: '6.5vw'
-                },
-                word: false
-            },
-            {
-                name: 'Stefan Foldi',
+                name: 'Ana Maria Voicu',
                 text: '',
                 videoId: '',
                 fontSize: {
