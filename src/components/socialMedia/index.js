@@ -11,7 +11,7 @@ const socialMedia = [
     {
         name: 'YouTube',
         imgUrl: '../../assets/icons/icon-yt.png',
-        url: 'https://www.youtube.com/channel/UCcxaL0lUAh1QnFAggx-2NlA'
+        url: 'https://www.youtube.com/c/NaturaUmanaFilm'
     },
     {
         name: 'Instagram',
