@@ -34,6 +34,7 @@ export default class App extends Component {
           <Router onChange={this.handleRoute}>
             <Donate path="/donate" />
             <Home path="/" />
+            <Redirect path="/" to="/donate" />
           </Router>
         </IntlProvider>
 			</div>
