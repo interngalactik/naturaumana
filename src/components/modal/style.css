@@ -1,0 +1,90 @@
+.modal__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 1;
+}
+
+.modal__box__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    height: 100%;
+}
+
+.player__container {
+    width: 640px;
+    height: 360px;
+}
+
+.player__container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.modal__box__text {
+    max-width: 640px;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal__box__close__btn {
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.modal__box__close__btn:hover {
+    opacity: 1;
+}
+
+.modal__box__close__btn:before, .modal__box__close__btn:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #fff;
+  }
+
+.modal__box__close__btn:before {
+    transform: rotate(45deg)
+}
+
+.modal__box__close__btn:after {
+    transform: rotate(-45deg)
+}
+
+
+@media(max-width: 1024px) {
+    .modal__container {
+        padding-top: 10vh;
+    }
+
+    .player__container {
+        width: 90vw;
+        height: 100%;
+    }
+
+    .modal__box__close__btn {
+        margin-top: 5vh;
+        top: 0;
+        right: 0;
+        width: 22px;
+        height: 22px;
+    }
+
+    .modal__box__close__btn:before, .modal__box__close__btn:after {
+        height: 22px;
+    }
+
+}

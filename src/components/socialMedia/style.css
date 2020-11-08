@@ -1,0 +1,32 @@
+.socialMedia__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 56px;
+    position: relative;
+}
+
+.socialMedia__text {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+ 
+.socialMedia__icons__container {
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia__icon {
+    padding: 20px;
+}
+
+.socialMedia__icon img {
+    width: 32px;
+}
+
+@media(max-width: 1024px) {
+    .socialMedia__container {
+        padding-top: 2vh;
+    }
+}

@@ -5,6 +5,7 @@ import Redirect from '../utils/Redirect';
 
 // Code-splitting is automated for routes
 import Donate from '../routes/donate';
+import Home from '../routes/home';
 
 let locale;
 let language;
@@ -32,7 +33,7 @@ export default class App extends Component {
         <IntlProvider definition={locale}>
           <Router onChange={this.handleRoute}>
             <Donate path="/donate" />
-            <Redirect path="/" to="/donate" />
+            <Home path="/" />
           </Router>
         </IntlProvider>
 			</div>

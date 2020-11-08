@@ -60,3 +60,23 @@
   right: 0;
   height: 100%;
 }
+
+.socialMedia {
+  position: fixed;
+  bottom: 4vh;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.footer p, .footer a {
+  color: #fff!important;
+}

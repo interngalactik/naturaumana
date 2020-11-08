@@ -4,20 +4,22 @@ import { Text } from 'preact-i18n';
 import Survey from '../../components/survey';
 import style from './style';
 import { BrowserView, MobileView } from 'react-device-detect';
+import Footer from '../../components/footer';
+import SocialMedia from '../../components/socialMedia';
 
 const videoId = 'EoG4Jw5Vs0U';
 const steps = {
   1: {
     buttons: [
       { 
-        title: <Text id="donate.buttons.monthlyDonation" />,
-        link: '',
-        increment: 2 
-      },
-      { 
         title: <Text id="donate.buttons.singleDonation" />,
         link: '',
         increment: 1 
+      },
+            { 
+        title: <Text id="donate.buttons.monthlyDonation" />,
+        link: '',
+        increment: 2 
       }
     ]
   },
@@ -113,6 +115,12 @@ export default class Donate extends Component {
           {/* {mute ? <VolumeMuteIcon color="#fff"/> : <VolumeHighIcon color="#fff"/>} */}
         </div>
         <Survey steps={steps} />
+        <div className={style.socialMedia}>
+          <SocialMedia />
+        </div>
+        <div className={style.footer}>
+          <Footer />
+        </div>
       </div>
     )
   }
