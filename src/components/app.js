@@ -33,8 +33,8 @@ export default class App extends Component {
         <IntlProvider definition={locale}>
           <Router onChange={this.handleRoute}>
             <Donate path="/donate" />
-            <Home path="/" />
             <Redirect path="/" to="/donate" />
+            {/* <Home path="/" /> */}
           </Router>
         </IntlProvider>
 			</div>
