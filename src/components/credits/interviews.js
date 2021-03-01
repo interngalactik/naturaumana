@@ -1,20 +1,20 @@
 import { h, Component } from 'preact';
 import style from './style';
-
-import YouTube from 'react-youtube';
+import 'plyr-react/dist/plyr.css';
 import Modal from '../modal';
 import { isMobile } from 'react-device-detect';
+import { Text } from 'preact-i18n';
 
 const interviews = [
   {
     interviewees: [
       {
-        name: 'Starring',
+        name: <Text id="home.credits.starring" />,
         text: '',
         videoId: '',
         fontSize: {
           browser: '3vw',
-          mobile: '5vw',
+          mobile: '4vw',
         },
         word: true,
       },
@@ -25,7 +25,7 @@ const interviews = [
         videoId: '2m08JDoTo4k',
         fontSize: {
           browser: '6vw',
-          mobile: '10vw',
+          mobile: '8vw',
         },
         word: false,
       },
@@ -36,7 +36,7 @@ const interviews = [
         videoId: 'gWWvIdyqLtc',
         fontSize: {
           browser: '6vw',
-          mobile: '10vw',
+          mobile: '8vw',
         },
         word: false,
       },
@@ -51,7 +51,7 @@ const interviews = [
         videoId: 'CfVidVPVSmE',
         fontSize: {
           browser: '5vw',
-          mobile: '8vw',
+          mobile: '6vw',
         },
         word: false,
       },
@@ -62,7 +62,7 @@ const interviews = [
         videoId: 'mvk7o09s2kE',
         fontSize: {
           browser: '5vw',
-          mobile: '8vw',
+          mobile: '6vw',
         },
         word: false,
       },
@@ -73,7 +73,7 @@ const interviews = [
         videoId: 'DWcSzjKpDHY',
         fontSize: {
           browser: '5vw',
-          mobile: '8vw',
+          mobile: '6vw',
         },
         word: false,
       },
@@ -84,7 +84,7 @@ const interviews = [
         videoId: 'UCQAokuasN8',
         fontSize: {
           browser: '5vw',
-          mobile: '8vw',
+          mobile: '6vw',
         },
         word: false,
       },
@@ -99,7 +99,7 @@ const interviews = [
         videoId: 'EyWZvwAA95w',
         fontSize: {
           browser: '5vw',
-          mobile: '7.5vw',
+          mobile: '5.5vw',
         },
         word: false,
       },
@@ -110,7 +110,7 @@ const interviews = [
         videoId: 'KlpWbNeyo_w',
         fontSize: {
           browser: '5vw',
-          mobile: '7.5vw',
+          mobile: '5.5vw',
         },
         word: false,
       },
@@ -121,7 +121,7 @@ const interviews = [
         videoId: 'dsdPZINYwbU',
         fontSize: {
           browser: '5vw',
-          mobile: '7.5vw',
+          mobile: '5.5vw',
         },
         word: false,
       },
@@ -131,8 +131,8 @@ const interviews = [
           'Anca Georgescu, director de strategie și comunicare de la TAC medicina veterinara sociala, ne povestește despre câinii singuri și despre cum îi putem ajuta.',
         videoId: 'htCuv9sLoEA',
         fontSize: {
-          browser: '4.5vw',
-          mobile: '6.5vw',
+          browser: '5vw',
+          mobile: '5.5vw',
         },
         word: false,
       },
@@ -142,8 +142,8 @@ const interviews = [
           'Bogdan Gioară vorbește despre impactul agriculturii zootehnice asupra schimbărilor climatice și incompatibilitatea ei cu vremurile pe care le trăim.',
         videoId: 'huJpw0JHRA8',
         fontSize: {
-          browser: '4.5vw',
-          mobile: '6.5vw',
+          browser: '5vw',
+          mobile: '5.5vw',
         },
         word: false,
       },
@@ -159,7 +159,7 @@ const interviews = [
         videoId: 'ZtCgWHUxLSA',
         fontSize: {
           browser: '4.5vw',
-          mobile: '6.5vw',
+          mobile: '5vw',
         },
         word: false,
       },
@@ -169,8 +169,8 @@ const interviews = [
           'Corina Zugravu, medic primar igiena alimentației și nutriție, ne împărtășește principalul beneficiu al unei diete bazate pe plante.',
         videoId: 'Qzmf6FNFRpg',
         fontSize: {
-          browser: '5vw',
-          mobile: '7.5vw',
+          browser: '4.5vw',
+          mobile: '5vw',
         },
         word: false,
       },
@@ -181,7 +181,7 @@ const interviews = [
         videoId: 'NiA87gSUX_w',
         fontSize: {
           browser: '4.5vw',
-          mobile: '6.5vw',
+          mobile: '5vw',
         },
         word: false,
       },
@@ -192,7 +192,7 @@ const interviews = [
         videoId: '2A1eZqShnyM',
         fontSize: {
           browser: '4.5vw',
-          mobile: '6.5vw',
+          mobile: '5vw',
         },
         word: false,
       },
@@ -200,10 +200,10 @@ const interviews = [
         name: 'Iulia Morosanu',
         text:
           'Cum aflăm prima dată despre animale? Încă de când suntem copii, fie în familie, fie prin intermediul cărţilor cu ilustraţii, ne este indicat la ce sunt de folos restul animalelor omului: "găina ne dă ouă, vaca ne dă lapte, oaia ne dă lână"... sună familiar? Ei bine, Iulia Moroşanu este o mamă care a adoptat stilul de viaţă vegan şi ne povesteşte prin prisma acestei experienţe cum a observat rădăcinile speciismului în societatea noastră şi cum se perpetuează acesta, ajungând la vârstă adultă să credem aceleaşi lucruri despre animale pe care le-am dobândit când eram mici.',
-        videoId: 'LC7mIJlOlxs ',
+        videoId: 'LC7mIJlOlxs',
         fontSize: {
           browser: '4.5vw',
-          mobile: '6.5vw',
+          mobile: '5vw',
         },
         word: false,
       },
@@ -214,7 +214,7 @@ const interviews = [
         videoId: 'Kp8wlO_IdZg',
         fontSize: {
           browser: '4.5vw',
-          mobile: '6.5vw',
+          mobile: '5vw',
         },
         word: false,
       },
@@ -247,23 +247,6 @@ export default class Interviews extends Component {
 
   render() {
     return (
-      // <ul class={style.interviews__container}>
-      //     {
-      //         interviews.map(row => {
-      //             return (
-      //                 // <li class={style.interviewee}>
-      //                 //     <p class={style.interviewee__text}>
-      //                 //         {interviewee.text}
-      //                 //     </p>
-      //                 //     <div class={style.interviewee__video}>
-      //                 //         <YouTube videoId={interviewee.videoId} />
-      //                 //     </div>
-      //                 // </li>
-      //             )
-      //         })
-      //     }
-      // </ul>
-
       <ul class={style.interviews__container}>
         {interviews.map((interviewees) => {
           return (

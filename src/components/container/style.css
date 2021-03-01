@@ -1,0 +1,19 @@
+.container {
+  padding-bottom: 142px;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--primary-color);
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.mobile__container {
+  padding-bottom: 198px;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--primary-color);
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

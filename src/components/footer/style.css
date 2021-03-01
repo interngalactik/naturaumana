@@ -1,25 +1,36 @@
 .footer {
-    color: #fafafa;
-    display: flex;
-    justify-content: center;
-    padding: 4vh 0 1vh;
-    opacity: 0.8;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
 }
 
 .footer p {
-    font-size: 14px;
-    color: #898989;
+  font-size: 14px;
+  color: #898989;
+  opacity: 0.8;
 }
 
 .footer a {
-    color: #898989;
-    text-decoration: none;
+  color: #898989;
+  text-decoration: none;
 }
 
 .footer a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .footer img {
-    width: 14px;
+  width: 14px;
+}
+
+.mobile__footer {
+  bottom: 56px;
 }

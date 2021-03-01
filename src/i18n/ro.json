@@ -1,14 +1,42 @@
 {
+  "home": {
+    "watchTrailer": "Priveşte Trailer",
+    "credits": {
+      "starring": "Cu participarea",
+      "directed": "Regia",
+      "and": "si",
+      "cameras": "Cameramani",
+      "soundMusic": "Sunet si Muzica",
+      "colorgrading": "Colorizare"
+    }
+  },
   "donate": {
     "title": "Natura Umană",
-    "subtitle": "Un documentar românesc independent - primul de acest gen, care pune sub semnul întrebării tradițiile și obiceiurile noastre referitor la animale în contrast cu moralitatea vremurilor în care trăim, demontează mituri în ceea ce privește alimentația, prezintă impactul pe care îl avem asupra mediului și oferă soluții.",
+    "subtitle": "Primul documentar românesc care explorează relația dintre om, animale și natură.\n\nCe responsabilități avem față de animale?\nCu ce prejudecăți legate de alimentație ne confruntăm în societate?\nCum afectează exploatarea animalelor mediul și sănătatea umană și ce soluții avem la îndemână?\n\nIată doar câteva întrebări la care ne propunem să răspundem după 2 ani de investigații și interviuri cu artişti, medici nutriționiști, filosofi, politicieni, sportivi, activiști sau oameni simpli, cuprinse într-un documentar captivant care va prezenta lumea așa cum o știm într-un mod unic.",
     "buttons": {
       "donate": "Donează",
-      "singleDonation": "O singură donație",
-      "monthlyDonation": "Donație lunară",
+      "singleDonation": "O singură donatie",
+      "monthlyDonation": "Donatie lunară",
       "oneEuro": "Un euro",
       "moreEuros": "Mai mult"
     },
     "warning": "ATENȚIE: Vei fi redirecționat către un site web terță pentru a putea face donația."
+  },
+  "press": {
+    "language": {
+      "title": "Limba",
+      "en": "Engleză",
+      "ro": "Română"
+    }
+  },
+  "header": {
+    "menu": {
+      "press": "Presă",
+      "home": "Acasă"
+    }
+  },
+  "footer": {
+    "builtWith": "Construit cu",
+    "by": "de"
   }
 }

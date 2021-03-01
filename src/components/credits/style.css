@@ -1,88 +1,89 @@
 .interviews__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 112px 0 56px;
-    background-color: #000;
-    position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 112px 0 56px;
+  background-color: #000;
+  position: relative;
 }
 
 .interviews__container__team {
-    padding-top: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #000;
-    position: relative;
+  padding-top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  position: relative;
 }
 
 .interviewee {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 6vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 6vw;
 }
 
 .interviewee a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.interviewee__name, .interviewee__word {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 20px;
-    font-family: SF Movie Poster;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 0 2vw;
-    cursor: pointer;
+.interviewee__name,
+.interviewee__word {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 20px;
+  font-family: SF Movie Poster;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 2vw;
+  cursor: pointer;
 }
 
 .interviewee__word {
-    cursor: auto;
-    padding-bottom: 0.5vw;
+  cursor: auto;
+  padding-bottom: 0.5vw;
 }
 
 .interviewee__name:hover {
-    color: gray;
+  color: gray;
 }
 
 .interviewee__video {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media(max-width: 1024px) {
-    .interviews__container {
-        padding-bottom: 0;
-    }
+@media (max-width: 1024px) {
+  .interviews__container {
+    padding-bottom: 0;
+  }
 
-    .interviews__container__team {
-        padding-top: 5vh;
-    }
+  .interviews__container__team {
+    padding-top: 5vh;
+  }
 
-    .interviewee {
-        padding: 4vw 0;
-    }
+  .interviewee {
+    padding: 4vw 0;
+  }
 }
 
-@media(min-width: 1400px) {
-    .interviewee {
-        height: 84px;
-    }
+@media (min-width: 1435px) {
+  .interviewee {
+    height: 84px;
+  }
 
-    .interviewee:nth-child(1) .interviewee__name {
-        font-size: 84px!important;
-    }
+  .interviewee:nth-child(1) .interviewee__name {
+    font-size: 84px !important;
+  }
 
-    .interviewee .interviewee__name {
-        font-size: 70px!important;
-    }
+  .interviewee .interviewee__name {
+    font-size: 70px !important;
+  }
 
-    .interviewee__word {
-        font-size: 42px!important;
-    }
+  .interviewee__word {
+    font-size: 42px !important;
+  }
 }

@@ -1,17 +1,16 @@
-.button {
-    background: rgba(0, 0, 0, 0);
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 900;
-    min-width: 15%;
-    font-family: 'Mayeka Thin';
-    letter-spacing: 5px;
-  }
+button {
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid var(--secondary-color);
+  padding: 10px 20px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 900;
+  font-family: 'Mayeka Thin';
+  letter-spacing: 5px;
+}
 
-  .button:hover {
-    background: rgba(255,255,255,0.9);
-    color: #000;
-  }
+button:hover {
+  background: rgba(255, 207, 61, 0.9);
+  color: var(--primary-color);
+}

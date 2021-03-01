@@ -1,48 +1,64 @@
 import { h, Component } from 'preact';
 import style from './style';
 
-import YouTube from 'react-youtube';
+import Plyr from 'plyr-react';
 
 import { isMobile, isTablet } from 'react-device-detect';
 
 export default class Modal extends Component {
-    constructor() {
-        super();
+  constructor() {
+    super();
 
-        this.state = {
-            showModal: false,
-        }
-    }
+    this.state = {
+      showModal: false,
+    };
+  }
 
-    render({ showModal, interviewee, handleModal }) {
-        const videoOptions = {
-			playerVars: {
-			  controls: 0,
-			  rel: 0,
-			  showinfo: 0
-			},
-          }
-          
-        return(
-            showModal ?
-            <div class={style.modal__container}>
-                <div class={style.modal__box__container}>
-                    <span class={style.modal__box__close__btn} onClick={() => handleModal()}></span>
-                    <YouTube 
-                        containerClassName={style.player__container} 
-                        videoId={interviewee.videoId} 
-                        opts={videoOptions}
-                    />
-                    {
-                        isMobile && !isTablet ?
-                        ''
-                        :
-                        <p class={style.modal__box__text}>{interviewee.text}</p>
-                    }
-                </div>
-            </div>
-            :
-            ''
-        )
-    }
+  render({ showModal, interviewee, handleModal }) {
+    const videoSource = {
+      type: 'video',
+      sources: [
+        {
+          src: interviewee.videoId,
+          provider: 'youtube',
+        },
+      ],
+      tracks: [
+        {
+          kind: 'captions',
+          label: 'English',
+          srclang: 'en',
+          src: '/path/to/captions.en.vtt',
+          default: true,
+        },
+        {
+          kind: 'captions',
+          label: 'French',
+          srclang: 'fr',
+          src: '/path/to/captions.fr.vtt',
+        },
+      ],
+    };
+
+    const videoOptions = {
+      settings: ['captions', 'quality', 'speed'],
+      captions: {
+        active: true,
+      },
+    };
+
+    return showModal ? (
+      <div class={style.modal__container}>
+        <div class={style.modal__box__container}>
+          <span
+            class={style.modal__box__close__btn}
+            onClick={() => handleModal()}
+          ></span>
+          <Plyr source={videoSource} options={videoOptions} />
+        </div>
+      </div>
+    ) : (
+      ''
+    );
+  }
 }

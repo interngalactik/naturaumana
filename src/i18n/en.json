@@ -1,7 +1,18 @@
 {
+  "home": {
+    "watchTrailer": "Watch Trailer",
+    "credits": {
+      "starring": "Starring",
+      "directed": "Directed by",
+      "and": "and",
+      "cameras": "Cameras",
+      "soundMusic": "Sound Design & Music",
+      "colorgrading": "colorgrading"
+    }
+  },
   "donate": {
     "title": "Human Nature",
-    "subtitle": "An independent Romanian documentary - the first of its kind, which wants to question our traditions and habits regarding the animals in contrast to the morality of the time we live in, debunks myths in terms of nutrition, shows the impact we have on the environment and offers solutions.",
+    "subtitle": "The first Romanian documentary exploring the relationship between humans, animals and nature.\n\nWhat are our responsibilities towards animals?\nWhat types of dietary biases do we encounter in our society?\nHow does animal exploitation impact the environment and our health and what solutions do we have at hand?\nThese are just some of the questions we set out to respond to after 2 years of investigations and interviews with artists, nutritionists specialists, philosophers, athletes, activists and ordinary people - all gathered in a captivating documentary that will show the world as we know it in a new light.",
     "buttons": {
       "donate": "Donate",
       "singleDonation": "Single donation",
@@ -10,5 +21,22 @@
       "moreEuros": "More"
     },
     "warning": "NOTICE: You will be redirected to a third-party website in order to make the donation."
+  },
+  "press": {
+    "language": {
+      "title": "Language",
+      "en": "English",
+      "ro": "Romanian"
+    }
+  },
+  "header": {
+    "menu": {
+      "press": "Press",
+      "home": "Home"
+    }
+  },
+  "footer": {
+    "builtWith": "Built with",
+    "by": "by"
   }
 }

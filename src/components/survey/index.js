@@ -1,26 +1,25 @@
 import { h, Component } from 'preact';
 import style from './style';
 import { Text, withText } from 'preact-i18n';
-import Footer from '../footer';
 
 @withText({
-  text: <Text id="donate.subtitle" />
+  text: <Text id="donate.subtitle" />,
 })
 export default class Survey extends Component {
-    state = {
+  constructor() {
+    super();
+
+    this.state = {
       step: 1,
       typingText: '',
-      showCursor: true
-    }
-
-    delay = 0;
-    initialDelay = 1000;
-    letterDelay = 45;
+      showCursor: true,
+    };
+  }
 
   handleClick(button) {
-    this.setState({ 
-      step: this.state.step + button.increment
-    })
+    this.setState({
+      step: this.state.step + button.increment,
+    });
     if (button.link) {
       window.location = button.link;
     }
@@ -28,20 +27,42 @@ export default class Survey extends Component {
 
   handleBackButton() {
     this.setState({
-      step: 1
-    })
+      step: 1,
+    });
+  }
+
+  handleTyping() {
+    let delay = 0;
+    let initialDelay = 1000;
+    let letterDelay = 45;
+
+    for (let i = 1; i <= this.props.text.length; i++) {
+      delay += Math.round((Math.random() * letterDelay) / 2) + letterDelay;
+
+      if (
+        i === 1 ||
+        this.props.text[i - 2] === '.' ||
+        this.props.text[i - 2] === '?'
+      )
+        delay += initialDelay;
+
+      this.interval = setTimeout(
+        () =>
+          this.setState({
+            typingText: this.props.text.substring(0, i),
+            showCursor: i !== this.props.text.length,
+          }),
+        delay
+      );
+    }
   }
 
   componentDidMount() {
-    let delay = 0;
+    this.handleTyping();
+  }
 
-    for (let i = 1; i <= this.props.text.length; i++) {
-      delay += Math.round(Math.random() * this.letterDelay / 2) + this.letterDelay;
-
-      if (i === 1 || this.props.text[i - 2] === '.' || this.props.text[i - 2] === '?') delay += this.initialDelay;
-
-      setTimeout(() => this.setState({ typingText: this.props.text.substring(0, i), showCursor: i !== this.props.text.length }), delay);
-    }
+  componentWillUnmount() {
+    clearTimeout(this.interval);
   }
 
   render({ steps }, { typingText }) {
@@ -52,36 +73,37 @@ export default class Survey extends Component {
             <h1>
               <Text id="donate.title" />
             </h1>
-            <h2>
-              {typingText}
-            </h2>
+            <h2>{typingText}</h2>
           </div>
           <div className={style.container__buttons}>
-          {
-            steps[this.state.step].buttons.map(button => {
+            {steps[this.state.step].buttons.map((button) => {
               return (
-                <button style={style.button} onClick={() => this.handleClick(button)}>
+                <button
+                  style={style.button}
+                  onClick={() => this.handleClick(button)}
+                >
                   {button.title}
                 </button>
-              )
-            })
-          }
+              );
+            })}
           </div>
         </div>
         <footer>
           <div className={style.button__back}>
-            {
-              this.state.step > 1 ?
-              <img src="/assets/icons/keyboard_back.png" onClick={() => this.handleBackButton()} />
-              :
+            {this.state.step > 1 ? (
+              <img
+                src="/assets/icons/keyboard_back.png"
+                onClick={() => this.handleBackButton()}
+              />
+            ) : (
               ''
-            }
+            )}
           </div>
-            {/* <p>
-              <Text id="donate.warning" />  
-            </p> */}
-          </footer>
+          <p>
+            <Text id="donate.warning" />
+          </p>
+        </footer>
       </div>
-    )
+    );
   }
 }
