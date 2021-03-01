@@ -7,66 +7,66 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import Footer from '../../components/footer';
 import SocialMedia from '../../components/socialMedia';
 
-const videoId = 'EoG4Jw5Vs0U';
+const videoId = 'rZGQkuL4oFA';
 const steps = {
   1: {
     buttons: [
-      { 
+      {
         title: <Text id="donate.buttons.singleDonation" />,
         link: '',
-        increment: 1 
+        increment: 1,
       },
-            { 
+      {
         title: <Text id="donate.buttons.monthlyDonation" />,
         link: '',
-        increment: 2 
-      }
-    ]
+        increment: 2,
+      },
+    ],
   },
   2: {
     buttons: [
-      { 
+      {
         title: 'Go Fund Me',
         link: 'https://www.gofundme.com/naturaumanafilm',
-        increment: 0
+        increment: 0,
       },
-      { 
+      {
         title: 'PayPal',
         link: 'https://www.paypal.me/naturaumanafilm',
-        increment: 0
-      }
+        increment: 0,
+      },
       // { title: 'Revolut', increment: 0 }
-    ]
+    ],
   },
   3: {
     buttons: [
-      { 
+      {
         title: <Text id="donate.buttons.oneEuro" />,
         link: 'https://www.teaming.net/naturaumanafilm',
-        increment: 0
+        increment: 0,
       },
-      { 
+      {
         title: <Text id="donate.buttons.moreEuros" />,
         link: 'https://www.patreon.com/naturaumanafilm',
-        increment: 0
-      }
-    ]
-  }
-}
+        increment: 0,
+      },
+    ],
+  },
+};
 
 export default class Donate extends Component {
   constructor() {
-    super()
+    super();
 
     this.state = {
-      mute: false
-    }
+      mute: false,
+    };
   }
 
   handleVolume() {
     this.setState({
-      mute: !this.state.mute
-    })
+      mute: !this.state.mute,
+    });
     console.log(this.state.mute);
   }
 
@@ -89,11 +89,11 @@ export default class Donate extends Component {
         volume: true,
         start: 15,
         end: 116,
-        loop: 1
+        loop: 1,
       },
     };
 
-    return(
+    return (
       <div className={style.video__background}>
         <BrowserView>
           <div className={style.video__foreground}>
@@ -108,20 +108,11 @@ export default class Donate extends Component {
         </BrowserView>
         <MobileView>
           <div className={style.image__foreground}>
-            <img src="/assets/images/cover.jpg" alt="natura umana" />
+            <img src="/assets/images/poster_web.jpg" alt="natura umana" />
           </div>
         </MobileView>
-        <div className={style.video__volume} onClick={() => this.handleVolume()}>
-          {/* {mute ? <VolumeMuteIcon color="#fff"/> : <VolumeHighIcon color="#fff"/>} */}
-        </div>
         <Survey steps={steps} />
-        <div className={style.socialMedia}>
-          <SocialMedia />
-        </div>
-        <div className={style.footer}>
-          <Footer />
-        </div>
       </div>
-    )
+    );
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "Natura Umană",
   "short_name": "Natura Umană",
-  "start_url": "/donate",
+  "start_url": "/",
   "homepage_url": "https://naturaumana.com",
   "display": "standalone",
   "orientation": "portrait",

@@ -20,22 +20,32 @@
     "build/*"
   ],
   "devDependencies": {
-    "eslint": "^4.9.0",
-    "eslint-config-synacor": "^2.0.2",
+    "@rmwc/top-app-bar": "^6.1.4",
+    "@types/preact-i18n": "^2.3.0",
+    "eslint": "^7.19.0",
+    "eslint-config-synacor": "^3.0.5",
+    "eslint-plugin-preact-i18n": "^1.0.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.5.4",
+    "jest": "^26.6.3",
     "per-env": "^1.0.2",
-    "preact-cli": "^3.0.3",
-    "preact-render-spy": "^1.2.1"
+    "preact-cli": "^3.0.5"
   },
   "dependencies": {
-    "mdi-preact": "^5.2.0",
-    "preact": "^8.2.6",
-    "preact-compat": "^3.17.0",
-    "preact-i18n": "^1.2.2",
-    "preact-router": "^2.5.7",
-    "react-device-detect": "^1.6.2",
-    "react-youtube": "^7.9.0"
+    "@rmwc/avatar": "^6.1.4",
+    "@rmwc/drawer": "^6.1.4",
+    "@rmwc/icon": "^6.1.4",
+    "@rmwc/list": "^6.1.4",
+    "@rmwc/select": "^6.1.4",
+    "@rmwc/snackbar": "^6.1.4",
+    "@rmwc/theme": "^6.1.4",
+    "mdi-preact": "^7.4.0",
+    "plyr-react": "^3.0.7",
+    "preact": "^10.5.12",
+    "preact-compat": "^3.19.0",
+    "preact-i18n": "^2.1.1-preactx",
+    "preact-router": "^3.2.1",
+    "react-device-detect": "^1.15.0",
+    "react-youtube": "^7.13.1"
   },
   "jest": {
     "verbose": true,

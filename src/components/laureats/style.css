@@ -1,0 +1,33 @@
+.laureats__container {
+  padding: 112px 2vw 0;
+  position: relative;
+  background-color: var(--primary-color);
+}
+
+.laureat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.laureat img {
+  width: 25%;
+  padding: 0 20px;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .laureats__container {
+    padding-top: 56px;
+  }
+
+  .laureat {
+    flex-wrap: wrap;
+  }
+
+  .laureat img {
+    width: 50%;
+    padding: 10px;
+  }
+}

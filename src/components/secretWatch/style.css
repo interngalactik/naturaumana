@@ -1,0 +1,86 @@
+.secret__watch {
+  padding: 56px 0;
+  min-height: 100%;
+  width: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.secret__watch form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+}
+
+.secret__watch > form > input {
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.secret__watch > form > input:focus {
+  border-color: var(--secondary-color);
+}
+
+.secret__watch > form > input::placeholder {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-family: 'Mayeka Thin';
+  letter-spacing: 2px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.video__container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.video__container > div:first-child {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.video__iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.video__play {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.video__play img {
+  cursor: pointer;
+}
+
+.video__play .action__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.action__container span {
+  display: flex;
+  justify-content: center;
+}

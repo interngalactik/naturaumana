@@ -1,0 +1,18 @@
+.press__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.press__content {
+  color: #fff;
+  opacity: 0.8;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.press__content a {
+  color: #fff;
+  /* text-decoration: none; */
+  cursor: pointer;
+}
