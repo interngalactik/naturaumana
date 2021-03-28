@@ -1,0 +1,56 @@
+.ngos__main {
+  display: flex;
+  justify-content: center;
+}
+
+.ngos__container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 10px 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: self-start;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 1rem;
+}
+
+.ngo__container {
+  height: 40vh;
+  transition: 250ms all;
+  display: flex;
+  justify-content: center;
+}
+
+.ngo__container:hover {
+  /* transform: scale(1.2); */
+  /* height: 35vh; */
+}
+
+.ngo__container a {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ngo__container__img {
+  height: 65%;
+  max-height: 200px;
+}
+
+.ngo__container__img img {
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.ngo__container__description p {
+  color: #fff;
+  padding: 10px 0px;
+  text-align: center;
+}

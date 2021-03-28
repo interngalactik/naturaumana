@@ -1,6 +1,6 @@
 {
   "home": {
-    "watchTrailer": "Priveşte Trailer",
+    "watchDoc": "Priveşte filmul",
     "credits": {
       "starring": "Cu participarea",
       "directed": "Regia",
@@ -32,7 +32,10 @@
   "header": {
     "menu": {
       "press": "Presă",
-      "home": "Acasă"
+      "home": "Acasă",
+      "change": "Fă o Schimbare",
+      "docs": "Alte Documentare",
+      "shop": "Magazin"
     }
   },
   "footer": {

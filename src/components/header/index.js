@@ -52,7 +52,7 @@ export default class Header extends Component {
 
   handleMenuItem({ detail }) {
     const { index } = detail;
-    console.log('index', index);
+
     this.setState({
       isMenuOpen: false,
     });
@@ -63,6 +63,18 @@ export default class Header extends Component {
         break;
       case 1:
         return route('/press', true);
+        break;
+      case 2:
+        return route('/change', true);
+        break;
+      case 3:
+        return route('/docs', true);
+        break;
+      case 4:
+        return window.open(
+          'https://shop.sanctuarnima.ro/product-tag/natura-umana/',
+          '__blank'
+        );
         break;
     }
   }
@@ -119,6 +131,15 @@ export default class Header extends Component {
               </ListItem>
               <ListItem>
                 <Text id="header.menu.press" />
+              </ListItem>
+              <ListItem>
+                <Text id="header.menu.change" />
+              </ListItem>
+              <ListItem>
+                <Text id="header.menu.docs" />
+              </ListItem>
+              <ListItem>
+                <Text id="header.menu.shop" />
               </ListItem>
             </List>
             <div className={style.drawer__footer}>
