@@ -37,7 +37,6 @@ export default class Application extends Component {
     } else {
       locale = require('../i18n/en.json');
     }
-
     return (
       <IntlProvider definition={locale}>
         <div id="app">
