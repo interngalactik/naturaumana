@@ -40,6 +40,17 @@
   cursor: pointer;
 }
 
+.interviewee__name__nolink {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 20px;
+  font-family: SF Movie Poster;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 2vw;
+}
+
 .interviewee__word {
   cursor: auto;
   padding-bottom: 0.5vw;

@@ -1,6 +1,6 @@
 {
   "home": {
-    "watchTrailer": "Watch Trailer",
+    "watchDoc": "Watch the film",
     "credits": {
       "starring": "Starring",
       "directed": "Directed by",
@@ -32,7 +32,10 @@
   "header": {
     "menu": {
       "press": "Press",
-      "home": "Home"
+      "home": "Home",
+      "change": "Make a Change",
+      "docs": "Other Documentaries",
+      "shop": "Shop"
     }
   },
   "footer": {

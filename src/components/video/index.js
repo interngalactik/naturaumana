@@ -27,8 +27,8 @@ export default class Video extends Component {
     event.target.playVideo();
   }
 
-  handleTrailer() {
-    window.open('https://youtu.be/QtDU8echZag', '_blank');
+  handleFilm() {
+    window.open('https://youtu.be/IGwx2ByvSm4', '_blank');
   }
 
   render() {
@@ -57,8 +57,8 @@ export default class Video extends Component {
             </div>
           </BrowserView>
           <div className={style.container__button__trailer}>
-            <button onClick={this.handleTrailer}>
-              <Text id="home.watchTrailer" />
+            <button onClick={this.handleFilm}>
+              <Text id="home.watchDoc" />
             </button>
           </div>
           <DonateButton

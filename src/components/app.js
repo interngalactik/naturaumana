@@ -10,6 +10,9 @@ import Donate from '../routes/donate';
 import Home from '../routes/home';
 import Watch from '../routes/watch';
 import Press from '../routes/press';
+import Docs from '../routes/docs';
+import Change from '../routes/change';
+
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Container from '../components/container';
@@ -45,6 +48,8 @@ export default class Application extends Component {
                 <Home path="/" />
                 <Watch path="/watch" />
                 <Press path="/press" />
+                <Docs path="/docs" />
+                <Change path="/change" />
               </Router>
               <Footer />
             </Container>

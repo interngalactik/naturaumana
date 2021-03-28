@@ -40,21 +40,6 @@
   }
 }
 
-.video__volume {
-  position: absolute;
-  z-index: 100;
-  bottom: 5vh;
-  right: 5vw;
-  cursor: pointer;
-}
-
-.video__play {
-  position: absolute;
-  z-index: 10;
-  bottom: 5vh;
-  left: 5vw;
-}
-
 .image__foreground {
   position: absolute;
   top: 0;

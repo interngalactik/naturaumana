@@ -172,19 +172,32 @@ export default class Teams extends Component {
           return (
             <li class={style.interviewee}>
               {team.members.map((member) => {
-                return member.link ? (
-                  <a
-                    href={member.link}
-                    target="_blank"
-                    class={style.interviewee__name}
-                    style={{
-                      fontSize: isMobile
-                        ? member.fontSize.mobile
-                        : member.fontSize.browser,
-                    }}
-                  >
-                    {member.name}
-                  </a>
+                return !member.word ? (
+                  member.link ? (
+                    <a
+                      href={member.link}
+                      target="_blank"
+                      class={style.interviewee__name}
+                      style={{
+                        fontSize: isMobile
+                          ? member.fontSize.mobile
+                          : member.fontSize.browser,
+                      }}
+                    >
+                      {member.name}
+                    </a>
+                  ) : (
+                    <p
+                      class={style.interviewee__name__nolink}
+                      style={{
+                        fontSize: isMobile
+                          ? member.fontSize.mobile
+                          : member.fontSize.browser,
+                      }}
+                    >
+                      {member.name}
+                    </p>
+                  )
                 ) : (
                   <p
                     class={style.interviewee__word}
